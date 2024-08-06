@@ -1,0 +1,44 @@
+@import "./../../styles/variables.scss";
+
+.search-wrapper {
+    position: relative;
+    display: flex;
+    margin-top: 2rem;
+    padding: 0 3rem;
+    flex-direction: column;
+
+    .search-icon {
+        width: 0.75rem;
+        position: absolute;
+        top: 0.625rem;
+    }
+
+    input {
+        border: none;
+        font-size: 1rem;
+        font-weight: 400;
+        border-bottom: 1px solid $black-color;
+        padding: 0.5rem 0.5rem 0.5rem 1rem;
+        outline: none;
+
+        &:focus {
+            border: none;
+            border-bottom: 1px solid $black-color;
+            outline: none;
+        }
+
+        &::placeholder {
+            color: #aaa;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+    }
+
+    .results {
+        font-size: 0.75rem;
+        font-weight: 400;
+        line-height: 0.8788rem;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+    }
+}

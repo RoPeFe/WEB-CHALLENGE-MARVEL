@@ -1,0 +1,33 @@
+@import "./../../styles/variables.scss";
+
+header {
+    height: 5.25rem;
+    min-width: 100%;
+    padding: 1rem 3rem;
+    background: #000;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 600px) {
+        padding: 1rem;
+    }
+
+    .header-logo {
+        width: 8.125rem;
+        height: 3.25rem;
+    }
+
+    .fav-counter {
+        display: flex;
+        color: $white-color;
+        text-decoration: none;
+        align-items: center;
+        font-size: 1rem;
+        line-height: 1.1719rem;
+
+        .number {
+            padding-left: 0.5rem;
+        }
+    }
+}

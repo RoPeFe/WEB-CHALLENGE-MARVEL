@@ -1,0 +1,25 @@
+@import "./../../styles/variables.scss";
+
+h2 {
+    padding: 0 3rem;
+}
+
+section.characters-list {
+    background: $white-color;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1rem;
+    padding: 0 3rem;
+    width: 100vw;
+    box-sizing: border-box;
+
+    /* Estilo para tablet */
+    @media (max-width: 1024px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* Estilo para móvil */
+    @media (max-width: 600px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
